@@ -117,9 +117,9 @@ public class Controller {
     @FXML
     public void dropSeleccion(){
         pok1Fondo.setStyle(" -fx-border-width: 5;-fx-border-color: red; -fx-background-color:white;");
-        pok1Nombre.setTextFill(Color.WHITE);
-        pok1Nivel.setTextFill(Color.WHITE);
-        pok1Vida.setTextFill(Color.WHITE);
+        pok1Nombre.setTextFill(Color.RED);
+        pok1Nivel.setTextFill(Color.RED);
+        pok1Vida.setTextFill(Color.RED);
 
         pok2Fondo.setStyle(" -fx-border-width: 5;-fx-border-color: red; -fx-background-color:white;");
         pok2Nombre.setTextFill(Color.WHITE);
@@ -127,33 +127,31 @@ public class Controller {
         pok2Vida.setTextFill(Color.WHITE);
 
         pok3Fondo.setStyle(" -fx-border-width: 5;-fx-border-color: red; -fx-background-color:white;");
-        pok3Nombre.setTextFill(Color.WHITE);
-        pok3Nivel.setTextFill(Color.WHITE);
-        pok3Vida.setTextFill(Color.WHITE);
+        pok3Nombre.setTextFill(Color.BLUE);
+        pok3Nivel.setTextFill(Color.BLUE);
+        pok3Vida.setTextFill(Color.BLUE);
 
         pok4Fondo.setStyle(" -fx-border-width: 5;-fx-border-color: red; -fx-background-color:white;");
-        pok4Nombre.setTextFill(Color.WHITE);
-        pok4Nivel.setTextFill(Color.WHITE);
-        pok4Vida.setTextFill(Color.WHITE);
+        pok4Nombre.setTextFill(Color.PURPLE);
+        pok4Nivel.setTextFill(Color.PURPLE);
+        pok4Vida.setTextFill(Color.PURPLE);
 
         pok5Fondo.setStyle(" -fx-border-width: 5;-fx-border-color: red; -fx-background-color:white;");
-        pok5Nombre.setTextFill(Color.WHITE);
-        pok5Nivel.setTextFill(Color.WHITE);
-        pok5Vida.setTextFill(Color.WHITE);
+        pok5Nombre.setTextFill(Color.GREY);
+        pok5Nivel.setTextFill(Color.GREY);
+        pok5Vida.setTextFill(Color.GREY);
 
         pok6Fondo.setStyle(" -fx-border-width: 5;-fx-border-color: red; -fx-background-color:white;");
-        pok6Nombre.setTextFill(Color.WHITE);
-        pok6Nivel.setTextFill(Color.WHITE);
-        pok6Vida.setTextFill(Color.WHITE);
-        fondo.setStyle("-fx-background-color:#B2A5B9;");
+        pok6Nombre.setTextFill(Color.YELLOW);
+        pok6Nivel.setTextFill(Color.YELLOW);
+        pok6Vida.setTextFill(Color.YELLOW);
+
+        fondo.setStyle("-fx-background-color:#ffffff;");
     }
     @FXML
-    public void elijoPokemon(Button ejemplo,Label ejemplo1,Label ejemplo2,Label ejemplo3){
+    public void elijoPokemon(Button ejemplo,Label label1,Label label2, Label label3){
         dropSeleccion();
-        ejemplo.setStyle("-fx-border-color: white; -fx-background-color:#D7D7D7; -fx-border-width: 5;");
-        ejemplo1.setTextFill(Color.rgb(0, 126, 213));
-        ejemplo2.setTextFill(Color.rgb(0, 126, 213));
-        ejemplo3.setTextFill(Color.rgb(0, 126, 213));
+        ejemplo.setStyle("-fx-border-color: white; -fx-background-color:#454545; -fx-border-width: 5;");
         Boton.setDisable(false);
     }
     @FXML
@@ -161,7 +159,7 @@ public class Controller {
         fondo.setStyle("-fx-background-color:grey;");
     }
     @FXML
-    public void clickOnDropPoke(ActionEvent event){
+    public void clickOnElegir(ActionEvent event){
         dropSeleccion();
         Boton.setDisable(true);
     }

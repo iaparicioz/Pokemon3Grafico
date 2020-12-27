@@ -55,7 +55,7 @@
                         <Insets />
                      </VBox.margin>
                   </GridPane>
-                  <Button fx:id="pokemon1Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon1" prefHeight="85.0" prefWidth="120.0" style="-fx-border-color: black; -fx-background-color: #464646; -fx-border-width: 3;" textFill="WHITE">
+                  <Button fx:id="pokemon1Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon1" prefHeight="85.0" prefWidth="120.0" style="-fx-border-color: black; -fx-background-color: #ffffff;" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="61.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -138,7 +138,7 @@
                         <Insets />
                      </VBox.margin>
                   </GridPane>
-                  <Button fx:id="pokemon2Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon2" prefHeight="85.0" prefWidth="120.0" style="-fx-border-color: black; -fx-background-color: #464646; -fx-border-width: 3;" textFill="WHITE">
+                  <Button fx:id="pokemon2Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon2" prefHeight="85.0" prefWidth="120.0" style="-fx-border-color: black; -fx-background-color: #ffffff;" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="69.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -197,7 +197,7 @@
                   </GridPane>
                </children>
             </VBox>
-            <VBox fx:id="pokemon3Layout" alignment="CENTER" layoutX="437.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+            <VBox fx:id="pokemon3Layout" alignment="CENTER" layoutX="437.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" style="-fx-border-radius: 5;" GridPane.columnIndex="2">
                <children>
                   <GridPane alignment="CENTER" prefHeight="17.0" prefWidth="51.0">
                      <columnConstraints>
@@ -224,7 +224,7 @@
                         <Insets />
                      </VBox.margin>
                   </GridPane>
-                  <Button fx:id="pokemon3Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon3" prefHeight="86.0" prefWidth="120.0" style="-fx-border-color: black; -fx-background-color: #464646; -fx-border-width: 3;" textFill="WHITE">
+                  <Button fx:id="pokemon3Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon3" prefHeight="86.0" prefWidth="120.0" style="-fx-border-color: black; -fx-background-color: #ffffff;" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="70.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -310,7 +310,7 @@
                         <Insets />
                      </VBox.margin>
                   </GridPane>
-                  <Button fx:id="pokemon4Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon4" prefHeight="85.0" prefWidth="120.0" style="-fx-border-color: black; -fx-background-color: #464646; -fx-border-width: 3;" textFill="WHITE">
+                  <Button fx:id="pokemon4Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon4" prefHeight="85.0" prefWidth="120.0" style="-fx-border-color: black; -fx-background-color: #ffffff;" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="70.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -395,7 +395,7 @@
                         <Insets />
                      </VBox.margin>
                   </GridPane>
-                  <Button fx:id="pokemon5Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon5" prefHeight="85.0" prefWidth="120.0" style="-fx-border-color: black; -fx-background-color: #464646; -fx-border-width: 3;" textFill="WHITE">
+                  <Button fx:id="pokemon5Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon5" prefHeight="85.0" prefWidth="120.0" style="-fx-border-color: black; -fx-background-color: #ffffff;" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="70.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -476,7 +476,7 @@
                         <Insets />
                      </VBox.margin>
                   </GridPane>
-                  <Button fx:id="pokemon6Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon6" prefHeight="76.0" prefWidth="117.0" style="-fx-border-color: black; -fx-background-color: #464646; -fx-border-width: 3;" textFill="WHITE">
+                  <Button fx:id="pokemon6Fondo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnPokemon6" prefHeight="76.0" prefWidth="117.0" style="-fx-border-color: black; -fx-background-color: #ffffff; -fx-border-width: 1;" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="70.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -537,7 +537,7 @@
                <effect>
                   <ColorAdjust />
                </effect></Button>
-            <Button fx:id="BotonEliminar" alignment="CENTER" layoutX="378.0" layoutY="388.0" maxHeight="27.0" maxWidth="100.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnDropPoke" prefHeight="11.0" prefWidth="101.0" style="-fx-background-color: #ffffff; -fx-background-color: ; -fx-border-color: #005EFF;" text="Elegir un pokemon " textFill="#d70f0f" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Button fx:id="BotonEliminar" alignment="CENTER" layoutX="378.0" layoutY="388.0" maxHeight="27.0" maxWidth="100.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickOnElegir" prefHeight="11.0" prefWidth="101.0" style="-fx-background-color: #ffffff; -fx-background-color: ; -fx-border-color: #005EFF;" text="Elegir un pokemon " textFill="#d70f0f" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font size="9.0" />
                </font>
