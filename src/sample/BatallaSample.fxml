@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="600.0" style="-fx-background-color: #bdc44f;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="216.0" minHeight="10.0" prefHeight="146.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="116.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <ImageView fitHeight="486.0" fitWidth="824.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <GridPane.margin>
+                <Insets top="100.0" />
+            </GridPane.margin>
+        </ImageView>
+        <HBox prefHeight="153.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <VBox prefHeight="83.0" prefWidth="258.0" style="-fx-border-radius: 10; -fx-border-width: 4; -fx-border-color: black; -fx-background-color: #FDFFE3;">
+                    <HBox.margin>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="40.0" />
+                    </HBox.margin>
+                    <children>
+                        <GridPane prefHeight="83.0" prefWidth="268.0" style="-fx-background-color: transparent;">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="57.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="193.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label fx:id="nombreRival" text="NAME:">
+                                    <GridPane.margin>
+                                        <Insets left="5.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label fx:id="lvlRival" text="LEVEL" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                    <padding>
+                                        <Insets right="5.0" />
+                                    </padding>
+                                </Label>
+                                <ProgressBar fx:id="barrarival" prefHeight="18.0" prefWidth="192.0" progress="1.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="PS" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                                </Label>
+                            </children>
+                        </GridPane>
+                    </children></VBox>
+                <ImageView fx:id="img7" fitHeight="165.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                    </image>
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin></ImageView>
+            </children></HBox>
+        <HBox prefHeight="147.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+            <children>
+                <ImageView fx:id="img8" fitHeight="146.0" fitWidth="228.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+
+                    </image></ImageView>
+                <VBox prefHeight="88.0" prefWidth="279.0" style="-fx-border-radius: 10; -fx-border-width: 4; -fx-border-color: black; -fx-background-color: #FDFFE3;">
+                    <HBox.margin>
+                        <Insets bottom="30.0" left="60.0" right="30.0" top="30.0" />
+                    </HBox.margin>
+                    <children>
+                        <GridPane prefHeight="84.0" prefWidth="274.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="52.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="172.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label fx:id="controldevidas" alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                <Label fx:id="nombrePokemon" prefHeight="17.0" prefWidth="56.0" text="NAME:">
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="PS" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                <Label fx:id="LEVEL" text="LEVEL" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                    <padding>
+                                        <Insets right="5.0" />
+                                    </padding>
+                                </Label>
+                                <ProgressBar fx:id="barravida" prefWidth="200.0" progress="1.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            </children>
+                        </GridPane>
+                    </children></VBox>
+            </children>
+            <GridPane.margin>
+                <Insets left="50.0" />
+            </GridPane.margin></HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+            <children>
+                <GridPane prefHeight="133.0" prefWidth="605.0" style="-fx-background-color: BLUE;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="444.0" minWidth="10.0" prefWidth="392.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="425.0" minWidth="10.0" prefWidth="208.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane fx:id="botonesAtaque" prefHeight="133.0" prefWidth="190.0" style="-fx-background-color: #ffffff;">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+
+                                <Button fx:id="muyarriesgado" mnemonicParsing="false"  prefHeight="45.0" prefWidth="172.0" text="ATAQUE MUY ARRIESGADO" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Button>
+                                <Button fx:id="seguro" alignment="CENTER" mnemonicParsing="false"  prefHeight="49.0" prefWidth="170.0" text="ATAQUE SEGURO" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                <Button fx:id="arriesgado" mnemonicParsing="false"  prefHeight="50.0" prefWidth="161.0" text="ATAQUE ARRIESGADO" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                <Button fx:id="cancelar" mnemonicParsing="false"  prefHeight="46.0" prefWidth="160.0" text="CANCELAR" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                            </children>
+                        </GridPane>
+                        <GridPane style="-fx-background-color: #ffffff;" GridPane.columnIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Button fx:id="atacar" mnemonicParsing="false" prefHeight="75.0" prefWidth="117.0" text="ATACAR" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                <Button fx:id="curar" mnemonicParsing="false"  prefHeight="75.0" prefWidth="102.0" text="CURAR" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+            </children></HBox>
+    </children>
+</GridPane>

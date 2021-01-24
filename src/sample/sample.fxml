@@ -59,7 +59,7 @@
                      <graphic>
                         <ImageView fitHeight="61.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/numero1.jpg" />
+                              <Image url="@../../../../Desktop/pokemon/numero1.jpg" />
                            </image></ImageView>
                      </graphic>
                   </Button>
@@ -142,7 +142,7 @@
                      <graphic>
                         <ImageView fitHeight="69.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/numero2.png" />
+                              <Image url="@../../../../Desktop/pokemon/numero2.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -228,7 +228,7 @@
                      <graphic>
                         <ImageView fitHeight="70.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/numerotres.png" />
+                              <Image url="@../../../../Desktop/pokemon/numerotres.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -314,7 +314,7 @@
                      <graphic>
                         <ImageView fitHeight="70.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/numero5.png" />
+                              <Image url="@../../../../Desktop/pokemon/numero5.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -399,7 +399,7 @@
                      <graphic>
                         <ImageView fitHeight="70.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/numero4.png" />
+                              <Image url="@../../../../Desktop/pokemon/numero4.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -480,7 +480,7 @@
                      <graphic>
                         <ImageView fitHeight="70.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../Desktop/numeroseis.png" />
+                              <Image url="@../../../../Desktop/pokemon/numeroseis.png" />
                            </image>
                         </ImageView>
                      </graphic>

@@ -7,6 +7,9 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+
+import javax.swing.text.html.ImageView;
+
 public class Controller {
 
 
@@ -76,43 +79,56 @@ public class Controller {
     @FXML
     public Label pok6Vida;
 
+    @FXML
+    private ImageView pok1imagen;
+    @FXML
+    private ImageView pok2imagen;
+    @FXML
+    private ImageView pok3imagen;
+    @FXML
+    private ImageView pok4imagen;
+    @FXML
+    private ImageView pok5imagen;
+    @FXML
+    private ImageView pok6imagen;
+
 
     @FXML
     public void initialize() {
 
         //inicializamos cada pokemon con sus datos que queremos que tengan
-        pokemonData pokemon1= new pokemonData("Sirenita","Nv. 14","148/149");
-        pokemonData pokemon2= new pokemonData("Pikachutu","Nv. 23","204/205");
-        pokemonData pokemon3= new pokemonData("Fueguito","Nv. 54","475/840");
-        pokemonData pokemon4= new pokemonData("Mariposon","Nv. 65","437/875");
-        pokemonData pokemon5= new pokemonData("Oruga Fea","Nv. 5","657/764");
-        pokemonData pokemon6= new pokemonData("Caparazon","Nv. 76","6/785");
+        pokemonData pokemon1= new pokemonData("Sirenita","Nv. 14",148,"@../../../../Desktop/pokemon/numero1.jpg");
+        pokemonData pokemon2= new pokemonData("Pikachutu","Nv. 23",204,"@../../../../Desktop/pokemon/numero2.jpg");
+        pokemonData pokemon3= new pokemonData("Fueguito","Nv. 54",475,"@../../../../Desktop/pokemon/numero3.jpg");
+        pokemonData pokemon4= new pokemonData("Mariposon","Nv. 65",437,"@../../../../Desktop/pokemon/numero4.jpg");
+        pokemonData pokemon5= new pokemonData("Oruga Fea","Nv. 5",657,"@../../../../Desktop/pokemon/numero5.jpg");
+        pokemonData pokemon6= new pokemonData("Caparazon","Nv. 76",785,"@../../../../Desktop/pokemon/numero6.jpg");
 
 
         //ponemos los nombres, niveles y vidas de cada pokemon.
         pok1Nombre.setText(pokemon1.nombrePokemon);
         pok1Nivel.setText(pokemon1.nivelPokemon);
-        pok1Vida.setText(pokemon1.vidaPokemon);
+        pok1Vida.setText(String.valueOf(pokemon1.vidaPokemon));
 
         pok2Nombre.setText(pokemon2.nombrePokemon);
         pok2Nivel.setText(pokemon2.nivelPokemon);
-        pok2Vida.setText(pokemon2.vidaPokemon);
+        pok2Vida.setText(String.valueOf(pokemon2.vidaPokemon));
 
         pok3Nombre.setText(pokemon3.nombrePokemon);
         pok3Nivel.setText(pokemon3.nivelPokemon);
-        pok3Vida.setText(pokemon3.vidaPokemon);
+        pok3Vida.setText(String.valueOf(pokemon3.vidaPokemon));
 
         pok4Nombre.setText(pokemon4.nombrePokemon);
         pok4Nivel.setText(pokemon4.nivelPokemon);
-        pok4Vida.setText(pokemon4.vidaPokemon);
+        pok4Vida.setText(String.valueOf(pokemon4.vidaPokemon));
 
         pok5Nombre.setText(pokemon5.nombrePokemon);
         pok5Nivel.setText(pokemon5.nivelPokemon);
-        pok5Vida.setText(pokemon5.vidaPokemon);
+        pok5Vida.setText(String.valueOf(pokemon5.vidaPokemon));
 
         pok6Nombre.setText(pokemon6.nombrePokemon);
         pok6Nivel.setText(pokemon6.nivelPokemon);
-        pok6Vida.setText(pokemon6.vidaPokemon);
+        pok6Vida.setText(String.valueOf(pokemon6.vidaPokemon));
     }
     @FXML
     public void dropSeleccion(){

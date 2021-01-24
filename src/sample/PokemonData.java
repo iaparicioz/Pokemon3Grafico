@@ -3,11 +3,13 @@ package sample;
 class pokemonData {
     String nombrePokemon;
     String nivelPokemon;
-    String vidaPokemon;
+    int vidaPokemon;
+    String imagenPokemon;
 
-    pokemonData(String nombre,String nivel, String vida){
+    pokemonData(String nombre,String nivel, int vida,String imagen){
         this.nombrePokemon=nombre;
         this.nivelPokemon=nivel;
         this.vidaPokemon=vida;
+        this.imagenPokemon=imagen;
     }
 }
