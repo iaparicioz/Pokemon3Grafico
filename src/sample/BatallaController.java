@@ -30,26 +30,30 @@ public class BatallaController {
     private Button botonMuyArriesgado;
     @FXML
     private Button botonCancelar;
-    @FXML
-    private ProgressBar progressBarNormal;
-    @FXML
-    private ProgressBar progressBarEnemigo;
+
     @FXML
     private Label nivelyo;
     @FXML
     private Label nivelEnemigo;
+
     @FXML
-    private Label lnombrealiado;
+    private Label lnombreyo;
     @FXML
     private Label lnombreenemigo;
     @FXML
-    private Label lpsaliado;
+    private Label lpsyo;
     @FXML
     private Label lpsenemigo;
+
     @FXML
     private ImageView imagenYo;
     @FXML
     private ImageView imagenEnemigo;
+
+    @FXML
+    private ProgressBar progressBarNormal;
+    @FXML
+    private ProgressBar progressBarEnemigo;
 
     pokemonData enemigo = new pokemonData("Ivonnesita", "Nv. 19", 754, "@../../../../Desktop/pokemon/ivonne.jpg");
     int total = 0;
@@ -85,7 +89,7 @@ public class BatallaController {
         double seCura = r.nextInt(15) + 10;
         meCuro = meCuro / 100;
         seCura = seCura / 100;
-        bajarVida(meCuro, lpsaliado);
+        bajarVida(meCuro, lpsyo);
         bajarVida(seCura, lpsenemigo);
         progressBarEnemigo.setProgress(progressBarEnemigo.getProgress() - seCura);
         progressBarNormal.setProgress(progressBarNormal.getProgress() - meCuro);
@@ -95,7 +99,7 @@ public class BatallaController {
     public void auxiliar(pokemonData pokemon) {
         pokemondata = pokemon;
         nivelyo.setText("Nv." + pokemon.nivelPokemon);
-        lnombrealiado.setText(pokemon.nombrePokemon);
+        lnombreyo.setText(pokemon.nombrePokemon);
         Image imagen2 = new Image(pokemon.imagenPokemon);
 
         imagenYo.setImage(imagen2);
@@ -105,7 +109,7 @@ public class BatallaController {
 
         imagenEnemigo.setImage(imagenenemigo);
         total = pokemon.vidaPokemon;
-        lpsaliado.setText(pokemon.vidaPokemon + "/" + total);
+        lpsyo.setText(pokemon.vidaPokemon + "/" + total);
         lpsenemigo.setText(enemigo.vidaPokemon + "/" + enemigo.vidaPokemon);
     }
 
@@ -116,7 +120,7 @@ public class BatallaController {
         double seCura = r.nextInt(50);
         meCuro = meCuro / 100;
         seCura = seCura / 100;
-        bajarVida(meCuro, lpsaliado);
+        bajarVida(meCuro, lpsyo);
         bajarVida(seCura, lpsenemigo);
         progressBarEnemigo.setProgress(progressBarEnemigo.getProgress() - seCura);
         progressBarNormal.setProgress(progressBarNormal.getProgress() - meCuro);
@@ -124,8 +128,7 @@ public class BatallaController {
     }
 
     public void alerta() {
-        // hay cosas que no me tiran, HAY QUE MIRARLO!! y entenderlo, copiado de uno que compartio en teams porq no entendia
-        // preguntar,
+        // hay cosas que no me tiran, HAY QUE MIRARLO!! y entenderlo, preguntar
        /* if (nivelEnemigo.getProgress() <= 0) {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setHeaderText("has ganado colega");
@@ -160,14 +163,14 @@ public class BatallaController {
     @FXML
     public void botonCurar () {
         Random r = new Random();
-        double curaa = r.nextInt(50) + 25;
-        double curae = r.nextInt(50) + 25;
-        curaa = curaa / 100;
-        curae = curae / 100;
-        curarvida(curaa, progressBarNormal);
-        curarvida(curae, progressBarEnemigo);
-        progressBarEnemigo.setProgress(progressBarEnemigo.getProgress() + curae);
-        progressBarNormal.setProgress(progressBarNormal.getProgress() + curaa);
+        double meCuro = r.nextInt(50) + 25;
+        double seCura = r.nextInt(50) + 25;
+        meCuro = meCuro / 100;
+        seCura = seCura / 100;
+        curarvida(meCuro, progressBarNormal);
+        curarvida(seCura, progressBarEnemigo);
+        progressBarEnemigo.setProgress(progressBarEnemigo.getProgress() + meCuro);
+        progressBarNormal.setProgress(progressBarNormal.getProgress() + seCura);
 
     }
 
@@ -175,7 +178,7 @@ public class BatallaController {
     public void bajarVida (Double daño, Label ps){
         Double vida = pokemondata.vidaPokemon * daño;
         pokemondata.vidaPokemon = (int) (pokemondata.vidaPokemon - vida);
-        ps.setText(pokemondata.vidaPokemon + "/" + total);
+        ps.setText(pokemondata.vidaPokemon + "/" + total + "de vida");
     }
 
 
@@ -188,26 +191,11 @@ public class BatallaController {
         } else {
             pokemondata.vidaPokemon = resultado;
         }
-        lpsaliado.setText(pokemondata.vidaPokemon + "/" + total);
+        lpsyo.setText(pokemondata.vidaPokemon + "/" + total + "de vida");
     }
 
 
     public void setVentana (Controller controller){
         this.controller = this.controller;
     }
-
-    public void onpbaliadoEntered () {
-        lpsaliado.setVisible(true);
-    }
-    public void onpbaliadoExit () {
-        lpsaliado.setVisible(false);
-    }
-    public void onpbenemigoEntered () {
-        lpsenemigo.setVisible(true);
-    }
-    public void onpbenemigoExit () {
-        lpsenemigo.setVisible(false);
-    }
-
-}
 }
