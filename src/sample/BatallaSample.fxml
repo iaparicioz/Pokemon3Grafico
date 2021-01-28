@@ -127,13 +127,13 @@
                             </rowConstraints>
                             <children>
 
-                                <Button fx:id="muyarriesgado" mnemonicParsing="false"  prefHeight="45.0" prefWidth="172.0" text="ATAQUE MUY ARRIESGADO" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                <Button fx:id="botonMuyArriesgado" mnemonicParsing="false"  prefHeight="45.0" prefWidth="172.0" onMouseClicked="#cMuyArriesgado" text="ATAQUE MUY ARRIESGADO" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <font>
                               <Font size="12.0" />
                            </font></Button>
-                                <Button fx:id="seguro" alignment="CENTER" mnemonicParsing="false"  prefHeight="49.0" prefWidth="170.0" text="ATAQUE SEGURO" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                <Button fx:id="arriesgado" mnemonicParsing="false"  prefHeight="50.0" prefWidth="161.0" text="ATAQUE ARRIESGADO" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                <Button fx:id="cancelar" mnemonicParsing="false"  prefHeight="46.0" prefWidth="160.0" text="CANCELAR" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                <Button fx:id="botonSeguro" alignment="CENTER" mnemonicParsing="false"  prefHeight="49.0" prefWidth="170.0" text="ATAQUE SEGURO" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                <Button fx:id="botonArriesgado" mnemonicParsing="false"  prefHeight="50.0" prefWidth="161.0" onMouseClicked="#cArriesgado" text="ATAQUE ARRIESGADO" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                <Button fx:id="botonCancelar" mnemonicParsing="false"  prefHeight="46.0" prefWidth="160.0" onMouseClicked="#cCancelar" text="CANCELAR" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                             </children>
                         </GridPane>
                         <GridPane style="-fx-background-color: #ffffff;" GridPane.columnIndex="1">
@@ -145,8 +145,8 @@
                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Button fx:id="atacar" mnemonicParsing="false" prefHeight="75.0" prefWidth="117.0" text="ATACAR" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                <Button fx:id="curar" mnemonicParsing="false"  prefHeight="75.0" prefWidth="102.0" text="CURAR" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                <Button fx:id="botonAtacar" onMouseClicked="#cAtacar" mnemonicParsing="false" prefHeight="75.0" prefWidth="117.0" text="ATACAR" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                <Button fx:id="botonCurar" onMouseClicked="#cCurar" mnemonicParsing="false"  prefHeight="75.0" prefWidth="102.0" text="CURAR" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                             </children>
                         </GridPane>
                     </children>

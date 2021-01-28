@@ -61,7 +61,7 @@ public class BatallaController {
     Controller controller;
 
     @FXML
-    public void BotonAtacar() {
+    public void cAtacar() {
         botonArriesgado.setVisible(true);
         botonArriesgado.setVisible(true);
         botonCancelar.setVisible(true);
@@ -72,7 +72,7 @@ public class BatallaController {
     }
 
     @FXML
-    public void botonCancelar() {
+    public void cCancelar() {
         botonArriesgado.setVisible(false);
         botonArriesgado.setVisible(false);
         botonCancelar.setVisible(false);
@@ -83,7 +83,7 @@ public class BatallaController {
     }
 
     @FXML
-    public void botonArriesgado() {
+    public void cArriesgado() {
         Random r = new Random();
         double meCuro = r.nextInt(15) + 10;
         double seCura = r.nextInt(15) + 10;
@@ -114,7 +114,7 @@ public class BatallaController {
     }
 
     @FXML
-    public void botonMuyArriesgado() {
+    public void cMuyArriesgado() {
         Random r = new Random();
         double meCuro = r.nextInt(50);
         double seCura = r.nextInt(50);
@@ -161,7 +161,7 @@ public class BatallaController {
     }
 
     @FXML
-    public void botonCurar () {
+    public void cCurar () {
         Random r = new Random();
         double meCuro = r.nextInt(50) + 25;
         double seCura = r.nextInt(50) + 25;
