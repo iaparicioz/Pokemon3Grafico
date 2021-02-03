@@ -97,7 +97,7 @@ public class BatallaController {
         progressBarNormal.setProgress(progressBarNormal.getProgress() - meCuro);
     }
 
-    public void auxiliar(pokemonData pokemon) {
+    public void pokaux(pokemonData pokemon) {
         pokemondata = pokemon;
         nivelyo.setText("Nv." + pokemon.nivelPokemon);
         lnombreyo.setText(pokemon.nombrePokemon);
