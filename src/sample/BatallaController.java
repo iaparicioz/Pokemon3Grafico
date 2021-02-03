@@ -85,15 +85,16 @@ public class BatallaController {
     @FXML
     public void cArriesgado() {
         Random r = new Random();
+        //quitamos entre 10 y 25 de vida en un numero aleatorio
         double meCuro = r.nextInt(15) + 10;
         double seCura = r.nextInt(15) + 10;
         meCuro = meCuro / 100;
         seCura = seCura / 100;
         bajarVida(meCuro, lpsyo);
         bajarVida(seCura, lpsenemigo);
+        //cambiamos las progressbar
         progressBarEnemigo.setProgress(progressBarEnemigo.getProgress() - seCura);
         progressBarNormal.setProgress(progressBarNormal.getProgress() - meCuro);
-        alerta();
     }
 
     public void auxiliar(pokemonData pokemon) {
@@ -116,6 +117,7 @@ public class BatallaController {
     @FXML
     public void cMuyArriesgado() {
         Random r = new Random();
+        //entre 0 y 50
         double meCuro = r.nextInt(50);
         double seCura = r.nextInt(50);
         meCuro = meCuro / 100;
@@ -124,7 +126,19 @@ public class BatallaController {
         bajarVida(seCura, lpsenemigo);
         progressBarEnemigo.setProgress(progressBarEnemigo.getProgress() - seCura);
         progressBarNormal.setProgress(progressBarNormal.getProgress() - meCuro);
-        //alerta();
+
+    }
+
+    public void cataqueseguro(){
+        Double meCuro = 20.0;
+        Double seCura= 20.0;
+        meCuro = meCuro/100;
+        seCura = seCura/100;
+        bajarVida(meCuro, lpsyo);
+        bajarVida(seCura, lpsenemigo);
+        progressBarEnemigo.setProgress(progressBarEnemigo.getProgress() - seCura);
+        progressBarNormal.setProgress(progressBarNormal.getProgress() - meCuro);
+
     }
 
     public void alerta() {
