@@ -2,21 +2,27 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 import javax.swing.text.html.ImageView;
+import java.io.IOException;
 
 public class Controller {
-
+    Controller controller;
 
     @FXML
     public Button Boton;
     @FXML
     public Button BotonEliminar;
+    @FXML
+    public java.awt.Button Estadisticas;
     @FXML
     public GridPane fondo;
 
@@ -203,5 +209,24 @@ public class Controller {
     @FXML
     public void clickOnPokemon6(ActionEvent event){
         elijoPokemon(pok6Fondo,pok6Nombre,pok6Nivel,pok6Vida);
+    }
+
+    @FXML
+    public void botonClickEstadisticas() throws IOException {
+        try{
+            Stage stage2 = new Stage();
+            FXMLLoader loader2 = new FXMLLoader(getClass().getResource("estadisticas.fxml"));
+            GridPane root2 = loader2.load();
+            Scene scene2 = new Scene(root2,600,500);
+            stage2.setScene(scene2);
+            stage2.show();
+
+            EstadisticasController estadisticasController = loader2.getController();
+            estadisticasController.graficoBarras(this);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
     }
 }

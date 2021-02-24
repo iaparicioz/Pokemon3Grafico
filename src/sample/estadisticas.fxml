@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0"
+      prefWidth="530.0" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.EstadisticasController"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <PieChart fx:id="PieChart" layoutX="15.0" layoutY="15.0" prefHeight="208.0" prefWidth="330.0"/>
+    <BarChart fx:id="BarChart" layoutX="15.0" layoutY="245.0" prefHeight="195.0" prefWidth="368.0">
+        <xAxis>
+            <CategoryAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </BarChart>
+</Pane>
