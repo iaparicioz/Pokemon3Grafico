@@ -6,12 +6,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.chart.BarChart;
-import javafx.scene.chart.PieChart;
+import javafx.scene.chart.*;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.scene.chart.*;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -30,8 +28,6 @@ public class EstadisticasController implements Initializable {
 
     public static double dañoYo = 0;
     public static double dañoEl = 0;
-
-    //public Controller controller;
 
     public void initialize(URL url, ResourceBundle resourceBundle){
         Stage stage = new Stage();
