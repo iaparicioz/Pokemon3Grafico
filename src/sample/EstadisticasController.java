@@ -23,8 +23,8 @@ public class EstadisticasController implements Initializable {
     @FXML
     public CategoryAxis ejex;
     @FXML
-    public NumberAxis ejey;
-    final BarChart<String,Number> bc = new BarChart<String,Number>(ejex,ejey);
+    public CategoryAxis ejey;
+    final BarChart bc = new BarChart(ejex,ejey);
 
     public static double dañoYo = 0;
     public static double dañoEl = 0;
